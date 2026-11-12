@@ -7,31 +7,41 @@
     <title>عارفه کوزه‌گرها | Front-End Developer</title>
 
     <meta name="description"
-          content="Portfolio عارفه کوزه‌گرها، توسعه‌دهنده Front-End و طراح وب">
+          content="پورتفولیوی عارفه کوزه‌گرها، توسعه‌دهنده فرانت‌اند و طراح وب، متخصص طراحی سایت‌های ریسپانسیو و فروشگاهی.">
+
+    <meta name="author" content="Arifeh Kozegarha">
+    <meta name="theme-color" content="#101b1b">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header class="header">
     <nav class="navbar container">
 
-        <a href="#" class="logo">
-            <span>&lt;</span> Arifeh <span>/&gt;</span>
+        <a href="#home" class="logo">
+            <span>&lt;</span> Arefeh <span>/&gt;</span>
         </a>
 
-        <button class="menu-btn" id="menuBtn">☰</button>
+        <button class="menu-btn" id="menuBtn"
+                aria-label="باز کردن منو">
+            ☰
+        </button>
 
         <ul class="nav-links" id="navLinks">
             <li><a href="#home">خانه</a></li>
             <li><a href="#about">درباره من</a></li>
             <li><a href="#skills">مهارت‌ها</a></li>
             <li><a href="#projects">نمونه‌کارها</a></li>
-            <li><a href="#contact">تماس</a></li>
+            <li><a href="#contact">تماس با من</a></li>
         </ul>
 
-        <button class="theme-btn" id="themeBtn">☀️</button>
+        <button class="theme-btn" id="themeBtn"
+                aria-label="تغییر تم">
+            ☀️
+        </button>
 
     </nav>
 </header>
@@ -39,14 +49,16 @@
 
 <main>
 
-<!-- HERO -->
+<!-- HERO SECTION -->
 <section class="hero" id="home">
 
     <div class="hero-content container">
 
         <div class="hero-text">
 
-            <p class="hello">سلام، من عارفه‌ام 👋</p>
+            <p class="hello">
+                سلام، من عارفه‌ام 👋
+            </p>
 
             <h1>
                 Front-End
@@ -54,8 +66,9 @@
             </h1>
 
             <p class="hero-description">
-                طراحی و توسعه وب‌سایت‌های مدرن، ریسپانسیو
-                و کاربرپسند با تمرکز بر تجربه کاربری.
+                من وب‌سایت‌هایی طراحی می‌کنم که در کنار
+                ظاهر زیبا، تجربه کاربری ساده، کاربردی
+                و حرفه‌ای داشته باشند.
             </p>
 
             <div class="hero-buttons">
@@ -73,7 +86,8 @@
             <div class="social-links">
 
                 <a href="https://github.com/kozegarha"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener noreferrer">
                     GitHub
                 </a>
 
@@ -102,16 +116,21 @@
 const developer = {
   name: "Arifeh",
   role: "Front-End Developer",
+
   skills: [
     "HTML",
     "CSS",
     "JavaScript",
-    "Vue"
+    "TypeScript",
+    "Quasar",
+    "WordPress"
   ],
+
+  focus: "User Experience",
   available: true
 };
 
-developer.available
+developer.available;
                 </code></pre>
 
             </div>
@@ -123,7 +142,7 @@ developer.available
 </section>
 
 
-<!-- ABOUT -->
+<!-- ABOUT SECTION -->
 <section class="section" id="about">
 
     <div class="container">
@@ -138,19 +157,29 @@ developer.available
             <div class="about-text">
 
                 <h3>
-                    وب را با کد و خلاقیت می‌سازم.
+                    ترکیب خلاقیت و کدنویسی برای ساخت وب بهتر.
                 </h3>
 
                 <p>
-                    من عارفه کوزه‌گرها، توسعه‌دهنده Front-End و
-                    طراح وب هستم. تمرکز اصلی من طراحی و پیاده‌سازی
-                    رابط‌های کاربری مدرن، ریسپانسیو و کاربردی است.
+                    من عارفه کوزه‌گرها، توسعه‌دهنده Front-End
+                    و طراح وب هستم و در زمینه طراحی و پیاده‌سازی
+                    وب‌سایت‌های مدرن و ریسپانسیو فعالیت می‌کنم.
                 </p>
 
                 <p>
-                    تجربه کار روی پروژه‌های فروشگاهی، خدماتی و
-                    وب‌سایت‌های شخصی را دارم و به دنبال همکاری
-                    به صورت دورکاری و فریلنسری هستم.
+                    با HTML، CSS و JavaScript کار می‌کنم
+                    و در مسیر یادگیری و توسعه مهارت‌هایم
+                    در زمینه TypeScript، Quasar و طراحی رابط کاربری هستم.
+                </p><p>
+                    در پروژه‌های شخصی خود روی طراحی فروشگاه‌های
+                    اینترنتی، وب‌سایت‌های معرفی خدمات و رابط‌های
+                    کاربری کاربردی تمرکز داشته‌ام.
+                </p>
+
+                <p>
+                    به دنبال فرصت‌های همکاری دورکاری و فریلنسری
+                    هستم تا بتوانم در کنار یادگیری مداوم،
+                    در پروژه‌های واقعی مشارکت داشته باشم.
                 </p>
 
             </div>
@@ -159,18 +188,18 @@ developer.available
             <div class="about-box">
 
                 <div>
-                    <strong>3+</strong>
-                    <span>پروژه واقعی</span>
+                    <strong>03</strong>
+                    <span>نمونه‌کار طراحی‌شده</span>
+                </div>
+
+                <div>
+                    <strong>Responsive</strong>
+                    <span>طراحی سازگار با موبایل</span>
                 </div>
 
                 <div>
                     <strong>100%</strong>
-                    <span>متعهد به پروژه</span>
-                </div>
-
-                <div>
-                    <strong>24/7</strong>
-                    <span>یادگیری و پیشرفت</span>
+                    <span>تلاش برای کیفیت پروژه</span>
                 </div>
 
             </div>
@@ -182,73 +211,110 @@ developer.available
 </section>
 
 
-<!-- SKILLS -->
+<!-- SKILLS SECTION -->
 <section class="section skills-section" id="skills">
 
-    <div class="container"><div class="section-title">
+    <div class="container">
+
+        <div class="section-title">
             <span>02</span>
             <h2>مهارت‌های من</h2>
         </div>
 
+        <p class="skills-intro">
+            ابزارها و فناوری‌هایی که با آن‌ها کار می‌کنم
+            و به‌صورت مستمر در حال توسعه مهارت‌هایم هستم.
+        </p>
+
         <div class="skills-grid">
 
             <div class="skill-card">
+
                 <div class="skill-icon">🌐</div>
+
                 <h3>HTML & CSS</h3>
-                <p>حرفه‌ای</p>
-                <div class="progress">
-                    <span style="width: 95%"></span>
-                </div>
-            </div>
 
-
-            <div class="skill-card">
-                <div class="skill-icon">⚡</div>
-                <h3>JavaScript</h3>
                 <p>خوب</p>
+
                 <div class="progress">
-                    <span style="width: 80%"></span>
+                    <span style="width: 85%"></span>
                 </div>
+
             </div>
 
 
             <div class="skill-card">
-                <div class="skill-icon">💚</div>
-                <h3>Vue 3</h3>
-                <p>متوسط</p>
+
+                <div class="skill-icon">⚡</div>
+
+                <h3>JavaScript</h3>
+
+                <p>در حال توسعه</p>
+
                 <div class="progress">
                     <span style="width: 65%"></span>
                 </div>
+
             </div>
 
 
             <div class="skill-card">
+
                 <div class="skill-icon">📘</div>
+
                 <h3>TypeScript</h3>
-                <p>متوسط</p>
-                <div class="progress">
-                    <span style="width: 60%"></span>
-                </div>
-            </div>
 
+                <p>مقدماتی</p>
 
-            <div class="skill-card">
-                <div class="skill-icon">🎨</div>
-                <h3>UI / UX</h3>
-                <p>متوسط</p>
-                <div class="progress">
-                    <span style="width: 65%"></span>
-                </div>
-            </div>
-
-
-            <div class="skill-card">
-                <div class="skill-icon">📝</div>
-                <h3>WordPress</h3>
-                <p>آشنایی</p>
                 <div class="progress">
                     <span style="width: 40%"></span>
                 </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">💚</div>
+
+                <h3>Quasar</h3>
+
+                <p>مقدماتی</p>
+
+                <div class="progress">
+                    <span style="width: 40%"></span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">🎨</div>
+
+                <h3>UI / UX</h3>
+
+                <p>مقدماتی</p>
+
+                <div class="progress">
+                    <span style="width: 45%"></span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">📝</div>
+
+                <h3>WordPress</h3>
+
+                <p>آشنایی کاربردی</p>
+
+                <div class="progress">
+                    <span style="width: 65%"></span>
+                </div>
+
             </div>
 
         </div>
@@ -258,7 +324,7 @@ developer.available
 </section>
 
 
-<!-- PROJECTS -->
+<!-- PROJECTS SECTION -->
 <section class="section" id="projects">
 
     <div class="container">
@@ -268,28 +334,36 @@ developer.available
             <h2>نمونه‌کارهای من</h2>
         </div>
 
+        <p class="skills-intro">
+            بخشی از پروژه‌هایی که برای تمرین،
+            یادگیری و نمایش توانایی‌های طراحی و توسعه وب
+            پیاده‌سازی کرده‌ام.
+        </p>
+
         <div class="projects-grid">
 
 
+            <!-- PROJECT 1 -->
             <article class="project-card">
 
                 <div class="project-image fitness">
+
                     <div class="project-overlay">
                         <span>MSA FITNESS</span>
                     </div>
+
                 </div>
 
-                <div class="project-content">
-
-                    <span class="project-category">
-                        Website / Fitness
+                <div class="project-content"><span class="project-category">
+                        Business Website / Fitness
                     </span>
 
                     <h3>MSA Fitness</h3>
 
                     <p>
-                        وب‌سایت معرفی خدمات مربی بدنسازی و تغذیه
-                        با طراحی ریسپانسیو و بخش‌های تعاملی.
+                        طراحی وب‌سایت معرفی خدمات ورزشی،
+                        مربی بدنسازی و برنامه‌های تغذیه
+                        با رابط کاربری ریسپانسیو.
                     </p>
 
                     <div class="tags">
@@ -300,6 +374,7 @@ developer.available
 
                     <a href="https://kozegarha.github.io/fitness/"
                        target="_blank"
+                       rel="noopener noreferrer"
                        class="project-link">
                         مشاهده پروژه ←
                     </a>
@@ -309,6 +384,7 @@ developer.available
             </article>
 
 
+            <!-- PROJECT 2 -->
             <article class="project-card">
 
                 <div class="project-image shop">
@@ -322,22 +398,26 @@ developer.available
                 <div class="project-content">
 
                     <span class="project-category">
-                        E-Commerce
+                        E-Commerce Website
                     </span>
 
                     <h3>ShopX</h3>
 
                     <p>
-                        طراحی فروشگاه اینترنتی با صفحات محصول،
-                        دسته‌بندی، جستجو و سبد خرید.
+                        طراحی فروشگاه اینترنتی با امکان
+                        نمایش محصولات، دسته‌بندی، جستجو
+                        و مدیریت سبد خرید.
                     </p>
 
                     <div class="tags">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
-                    </div><a href="https://kozegarha.github.io/shopx2-pro/"
+                    </div>
+
+                    <a href="https://kozegarha.github.io/shopx2-pro/"
                        target="_blank"
+                       rel="noopener noreferrer"
                        class="project-link">
                         مشاهده پروژه ←
                     </a>
@@ -347,12 +427,13 @@ developer.available
             </article>
 
 
+            <!-- PROJECT 3 -->
             <article class="project-card">
 
                 <div class="project-image shop2">
 
                     <div class="project-overlay">
-                        <span>DIGISHOP</span>
+                        <span>DIGISHOP PRO</span>
                     </div>
 
                 </div>
@@ -360,14 +441,15 @@ developer.available
                 <div class="project-content">
 
                     <span class="project-category">
-                        E-Commerce
+                        E-Commerce / Portfolio Project
                     </span>
 
-                    <h3>DigiShop2</h3>
+                    <h3>DigiShop Pro</h3>
 
                     <p>
-                        پروژه فروشگاهی با تمرکز بر طراحی رابط کاربری
-                        و تجربه کاربری مناسب.
+                        طراحی و توسعه فروشگاه اینترنتی با
+                        تمرکز بر تجربه خرید، نمایش محصولات،
+                        جزئیات محصول و سبد خرید.
                     </p>
 
                     <div class="tags">
@@ -378,6 +460,7 @@ developer.available
 
                     <a href="http://digishop2.ir/"
                        target="_blank"
+                       rel="noopener noreferrer"
                        class="project-link">
                         مشاهده پروژه ←
                     </a>
@@ -386,6 +469,7 @@ developer.available
 
             </article>
 
+
         </div>
 
     </div>
@@ -393,7 +477,7 @@ developer.available
 </section>
 
 
-<!-- CONTACT -->
+<!-- CONTACT SECTION -->
 <section class="section contact-section" id="contact">
 
     <div class="container">
@@ -403,29 +487,50 @@ developer.available
             <h2>بیایید همکاری کنیم</h2>
         </div>
 
-
         <div class="contact-box">
 
             <div>
 
                 <h3>
-                    یک پروژه در ذهن دارید؟
+                    ایده‌ای برای ساخت یک وب‌سایت دارید؟
                 </h3>
 
                 <p>
-                    اگر به یک وب‌سایت مدرن، ریسپانسیو و
-                    حرفه‌ای نیاز دارید، خوشحال می‌شوم
-                    درباره پروژه‌تان صحبت کنیم.
+                    اگر برای کسب‌وکار یا پروژه خود به
+                    یک وب‌سایت زیبا، ریسپانسیو و کاربردی
+                    نیاز دارید، خوشحال می‌شوم درباره
+                    جزئیات پروژه شما صحبت کنیم.
                 </p>
+
+                <div class="hero-buttons"><a href="mailto:kozegarha315@gmail.com"
+                       class="btn primary">
+                        ارسال ایمیل
+                    </a>
+
+                    <a href="https://github.com/kozegarha"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn secondary">
+                        GitHub من
+                    </a>
+
+                </div>
 
             </div>
 
 
             <div class="contact-info">
 
-    
                 <span>
-                    📍 قزوین — همکاری دورکاری و فریلنسری
+                    📍 قزوین — ایران
+                </span>
+
+                <span>
+                    💻 همکاری دورکاری و فریلنسری
+                </span>
+
+                <span>
+                    ✉️ kozegarha315@gmail.com
                 </span>
 
             </div>
@@ -439,11 +544,12 @@ developer.available
 </main>
 
 
+<!-- FOOTER -->
 <footer>
 
     <p>
         © <span id="year"></span>
-        Arefeh Kozegarha
+        Arifeh Kozegarha
     </p>
 
     <p>
